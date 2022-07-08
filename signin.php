@@ -12,8 +12,6 @@
     <form action="signup-submit.php" method="post">
         <fieldset>
             <p class= "heading">Welcome Back!</p>
-            <label for="seeking-age">
-            </label>
             <input type ="text" id = "username" name = "username" maxlength="20" placeholder = "Username" required> 
             <br>
             <br>
