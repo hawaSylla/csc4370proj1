@@ -1,0 +1,36 @@
+html {
+    height: 100%;
+}
+body{
+    background: linear-gradient(#F2E69D, #f2e79d85);
+}
+
+button{
+    background-color: #2669BF;
+    border: none;
+    text-align: center;
+    padding: 20px;
+    border-radius: 35px;
+    width: 30%;
+    color: #F5F5F5;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+img{
+    width: 55%;
+    margin-top: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.start-page-buttons{
+    margin-top: 3%;
+    text-align: center;
+}
+
+button:hover{
+    color:#2669BF;
+    background-color: #F5F5F5;
+}
