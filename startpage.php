@@ -8,15 +8,15 @@
     <img src="imgs/guessWhoLogo.png" alt="guessWhoLogo" />
 
     <div class="start-page-buttons">
-      <a href="signin.php">
+     <form action="signin.php">
         <button>Sign In</button>
-      </a>
+      </form>
       <br />
       <br />
       <br />
-      <a href="signup.php">
+      <form action="signup.php">
         <button>Register</button>
-      </a>
+      </form>
     </div>
   </body>
 </html>

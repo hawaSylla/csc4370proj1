@@ -21,9 +21,9 @@ file_put_contents("userinfo.txt", $login, FILE_APPEND);
 <br>
 <p class = "heading">Welcome <span> <?= $username ?> </span> !</p>
 <div class="center-button">
-<a href="signin.php">
+    <form action="signin.php">
         <button>Sign In</button>
- </a>
+    </form>
 </div>
 
 </body>
