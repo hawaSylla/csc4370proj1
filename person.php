@@ -99,3 +99,5 @@ $robert = new Person ("robert", True, "brown", "short", "straight", "blue", "big
 $sam = new Person ("sam", True, "white", "bald", "straight", "brown", "small", True, False, False, False, False, False);
 $susan = new Person ("susan", False, "white", "long", "straight", "brown", "small", False, False, False, False, True, False);
 $tom = new Person ("tom", True, "black", "bald", "straight", "blue", "small", True, False, False, False, False, False);
+
+?>
