@@ -1,5 +1,6 @@
 <?php
 
+    include 'person.php';
     global $randomPeople;
     global $mysteryPerson;
 
@@ -29,13 +30,20 @@
     $susan = new Person ("susan", False, "white", "long", "straight", "brown", "small", False, False, False, False, True, False);
     $tom = new Person ("tom", True, "black", "bald", "straight", "blue", "small", True, False, False, False, False, False);
 
+    //array of all possible people
     $people = array($alex, $alfred, $anita, $anne, $bernard, $bill, $charles, $claire, $david, $eric, $frans, $george, $herman, $joe, $maria, $max, $paul, $peter, $philip, $richard, $robert, $sam, $susan, $tom);
 
     $randomPeople = [];
-    while (count($randomPeople) < 17) {
-        $randomKey = mt_rand(0, count($people)-1);
-        $randomPeople[$randomKey] = $people[$randomKey];
+    
+    //put people in random order and pop 17 into new array to use for the game
+    shuffle($people);
+    for($i=0;$i<17;$i++) {
+        $randomPeople[$i] = $people[count($people)-1];
+        array_pop($people);
     }
 
-    $mysteryPerson = $randomPeople[rand(0, 16)];
+    //randomly select one person to be the mystery person for the game
+    $rand = rand(0, 16);
+    //print $rand;  debug
+    $mysteryPerson = $randomPeople[$rand];
 ?>
