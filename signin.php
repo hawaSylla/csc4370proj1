@@ -1,3 +1,6 @@
+<?php
+ob_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,8 +11,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<?php
+require "signin-submit.php";
+if(isset($loginFailed)){
+    echo "<div> Invalid username or password </div>";
+}
+?>
 <div>
-    <form action="signup-submit.php" method="post">
+    <form action = "main.php" method="post">
         <fieldset>
             <p class= "heading">Welcome Back!</p>
             <input type ="text" id = "username" name = "username" maxlength="20" placeholder = "Username" required> 

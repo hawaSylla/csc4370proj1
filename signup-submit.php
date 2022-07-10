@@ -8,18 +8,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <?php
-$username = $_POST["username"];
-$password = $_POST["password"];
+$user = array(
+    'username' => '',
+    'password' => ''
+);
 
-$login = "$username,$password\n";
-file_put_contents("userinfo.txt", $login, FILE_APPEND);
+if(isset($_POST['username'])){
+    $user['username'] = urlencode($_POST['username']);
+}
+if(isset($_POST['password'])){
+    $user['password'] = urlencode($_POST['password']);
+}
+
+$user_info = $user;
+$write = implode(",", $user_info);
+file_put_contents("userinfo.txt", PHP_EOL.$write, FILE_APPEND);
 ?>
-
 <img class = "smallerlogo" src="imgs/guessWhoLogo.png" alt="guessWhoLogo">
 <br>
-<p class = "heading">Welcome <span> <?= $username ?> </span> !</p>
+<p class = "heading">Welcome <span> <?= $user['username'] ?> </span> !</p>
 <div class="center-button">
     <form action="signin.php">
         <button>Sign In</button>
