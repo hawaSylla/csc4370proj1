@@ -13,9 +13,10 @@ class Person {
     public $beard;
     public $rosyCheeks;
     public $hasHat;
+    public $pic;
 
     //constructor for person object
-    function __construct($name, $isMale, $hairColor, $hairLength, $hairTexture, $eyeColor, $noseSize, $hasGlasses, $facialHair, $mustache, $beard, $rosyCheeks, $hasHat) {
+    function __construct($name, $isMale, $hairColor, $hairLength, $hairTexture, $eyeColor, $noseSize, $hasGlasses, $facialHair, $mustache, $beard, $rosyCheeks, $hasHat, $pic) {
         $this->name = $name;
         $this->isMale = $isMale;
         $this->hairColor = $hairColor;
@@ -29,6 +30,7 @@ class Person {
         $this->beard = $beard;
         $this->rosyCheeks = $rosyCheeks;
         $this->hasHat = $hasHat;
+        $this->pic = $pic;
     }
   
     //getters for all values
@@ -70,6 +72,9 @@ class Person {
     }
     function get_hasHat() {
         return $this->hasHat;
+    }
+    function get_pic() {
+        return $this->pic;
     }
   
 }
