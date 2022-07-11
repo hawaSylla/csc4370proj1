@@ -36,6 +36,11 @@ $profile = $_SESSION['mysteryPerson']->get_pic() ?? null;
             <option value="paul">paul</option>
             <option value="peter">peter</option>
             <option value="phillip">phillip</option>
+            <option value="richard">richard</option>
+            <option value="robert">robert</option>
+            <option value="sam">sam</option>
+            <option value="susan">susan</option>
+            <option value="tom">tom</option>
         </select>
 
         <label for="Gender">Guess The Gender:</label>

@@ -67,8 +67,9 @@ if (isset($_SESSION['mysteryPerson'])) {
         }
     </style>
 </head>
+
 <form action="guesswho.php">
-    <button type="button">Go Back</button>
+    <button>Go Back</button>
 </form>
 
 </html>
