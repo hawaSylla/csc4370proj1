@@ -74,4 +74,14 @@ button:hover{
   float:right;
 }
 
+table {
+	height: 100%;
+	width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+td {
+  text-align: center; 
+  vertical-align: middle;
+}
