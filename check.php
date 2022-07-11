@@ -17,10 +17,20 @@ if (isset($_SESSION['mysteryPerson'])) {
         else if($gGuess == $_SESSION['mysteryPerson']->get_isMale() ?? null){
             echo "<center> an attribute is correct, see if you can get the final guess!</center>";
             $_SESSION['count'] ++ ;
+            echo "Count : ";
+            echo $_SESSION['count'];
+            if (isset($_SERVER["HTTP_REFERER"])) {
+                header("Location: " . $_SERVER["HTTP_REFERER"]);
+            }
         }
         else if($hGuess == $_SESSION['mysteryPerson']->get_hairColor() ?? null){
             echo "<center> an attribute is correct, see if you can get the final guess!</center>";
             $_SESSION['count'] ++ ;
+            echo "Count : ";
+            echo $_SESSION['count'];
+            if (isset($_SERVER["HTTP_REFERER"])) {
+                header("Location: " . $_SERVER["HTTP_REFERER"]);
+            } 
         }
 }
 
