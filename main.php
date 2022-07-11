@@ -13,7 +13,7 @@
         <a href="main.php">Home</a>
         <a href="guesswho.php">Play</a>
         <a href="leaderboard.php">Leaderboards</a>
-        <a id="logout" href="starpage.php">Logout</a>
+        <a id="logout" href="startpage.php">Logout</a>
     </div>
     <?php include 'gameInit.php'; 
     $_SESSION['randomPeople'] = $randomPeople;
