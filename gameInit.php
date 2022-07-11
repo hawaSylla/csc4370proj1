@@ -34,18 +34,17 @@
 
     $randomPeople = [];
     
-    //put people in random order and pop 19 into new array to use for the game
+    //put people in random order and pop 18 into new array to use for the game
     shuffle($people);
-    for($i=0;$i<19;$i++) {
+    for($i=0;$i<18;$i++) {
         $randomPeople[$i] = $people[count($people)-1];
         array_pop($people);
     }
 
     //randomly select one person to be the mystery person for the game and remove them from the array
-    $rand = rand(0, 18);
+    $rand = rand(0, 17);
     //print $rand;  debug
     $mysteryPerson = $randomPeople[$rand];
-    array_splice($randomPeople, $rand, 1);
 
 //}
 ?>
