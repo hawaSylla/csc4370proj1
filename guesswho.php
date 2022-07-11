@@ -52,8 +52,8 @@ $profile = $_SESSION['mysteryPerson']->get_pic() ?? null;
         <label for="Hair">Guess The Hair Length:</label>
         <select id="HairColor" name="HairC">
             <option value=null>null</option>
-            <option value="Long">Long</option>
-            <option value="Short">Short</option>
+            <option value="long">Long</option>
+            <option value="short">Short</option>
             <option value="bald">bald</option>
 
         </select>
