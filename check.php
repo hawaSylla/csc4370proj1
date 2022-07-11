@@ -57,6 +57,13 @@ if (isset($_SESSION['mysteryPerson'])) {
         //     header("Location: " . $_SERVER["HTTP_REFERER"]);
         // } 
     }
+    else{
+        echo "<center>Wrong Guess.. Try again !</center>";
+        $_SESSION['count']++;
+        echo "<center>Count : </center>";
+        echo $_SESSION['count'];
+
+    }
 } else {
     echo "Uh oh";
 }
