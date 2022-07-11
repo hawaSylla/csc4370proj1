@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 include("header.html");
 include("gameInit.php");
@@ -114,7 +113,6 @@ session_start();
     $form->addPlugin('formvalidation', '#fg-form', 'default', array('language' => 'en_US')); -->
 
 </form>
-=======
 <?php 
     include("header.html");
     include("gameInit.php"); 
@@ -178,6 +176,5 @@ session_start();
             <td><img class="profile" src="<?php print $_SESSION['randomPeople'][18]->get_pic() ?? null; ?>" alt="1"></td>
         </tr>
     </table>
->>>>>>> c6321b80bf58f8562ccb7009d9be110cd5c72ec1
 
 <?php include("footer.html"); ?>
