@@ -31,7 +31,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td><img src="imgs/backofcard.png" alt="background"></td>
+            <td><img src="imgs/backsolid.png" alt="background"></td>
             <td></td>
             <td></td>
             <td></td>
