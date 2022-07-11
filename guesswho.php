@@ -11,11 +11,31 @@
             <th></th>
             <th></th>
             <th></th>
-            <th><img src="imgs/backofcard.png" alt="mystery person"></th>
+            <th><div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="imgs/backofcard.png" alt="backofcard">
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="<?php print $strMP ?>" alt="mysteryPerson">
+                        </div>
+                    </div>
+                </div></th>
             <th></th>
             <th></th>
             <th></th>
             <th></th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><img src="imgs/backofcard.png" alt="background"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
         <tr>
             <td><img class="profile" src="<?php print $_SESSION['randomPeople'][0]->get_pic() ?? null; ?>" alt="1"></td>
