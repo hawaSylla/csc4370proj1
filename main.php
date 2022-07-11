@@ -18,6 +18,7 @@
     <?php include 'gameInit.php'; 
     $_SESSION['randomPeople'] = $randomPeople;
     $_SESSION['mysteryPerson'] = $mysteryPerson;
+    $_SESSION['count'] = 0;
     //print $mysteryPerson->get_name() ?? null;   //debug: gets name of mystery person
     //print $randomPeople[0]->get_pic() ?? null
 

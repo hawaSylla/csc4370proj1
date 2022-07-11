@@ -1,7 +1,7 @@
 <?php
 include("gameInit.php");
 session_start();
-$_SESSION['count'] = 0;
+
 $_SESSION['mysteryPerson'];
 //print_r($_SESSION);
 
