@@ -38,6 +38,7 @@ $profile = $_SESSION['mysteryPerson']->get_pic() ?? null;
                 <td></td>
                 <td></td>
             </tr>
+        </table>
 </div>
 
 
