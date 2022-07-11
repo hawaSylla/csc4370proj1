@@ -10,7 +10,7 @@
   </head>
   <body>
     <div class="topnav">
-        <a href="main.php"><img class="nav" src="imgs/guessWhoLogo.png" alt="guessWhoLogo" /></a>
+        <a href="main.php">Home</a>
         <a href="guesswho.php">Play</a>
         <a href="leaderboard.php">Leaderboards</a>
         <a id="logout" href="starpage.php">Logout</a>
