@@ -1,8 +1,12 @@
 <?php
-include("header.html");
 include("gameInit.php");
 session_start();
 $profile = $_SESSION['mysteryPerson']->get_pic() ?? null;
+
+if(isset($_POST['username'])){
+    $user['username'] = urlencode($_POST['username']);
+}
+
 ?>
 
 <html lang="en">
@@ -39,7 +43,7 @@ $profile = $_SESSION['mysteryPerson']->get_pic() ?? null;
             </tr>
             <tr>
                 <td>1</td>
-                <td><?= $user['username'] ?></td>
+                <td><?= $_SESSION['username'] ?></td>
                 <td><?= $_SESSION['count'] ?></td>
             </tr>
             <tr>
@@ -55,9 +59,6 @@ $profile = $_SESSION['mysteryPerson']->get_pic() ?? null;
         </table>
     </div>
 
-
-
-</body>
 
 
 <?php include("footer.html"); ?>
