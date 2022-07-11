@@ -4,7 +4,6 @@
     global $randomPeople;
     global $mysteryPerson;
 
-    //initating all people who will be used in guess who
     $alex = new Person("alex", True, "black", "short", "straight", "brown", "small", False, True, True, False, False, False, "imgs/alex.jpg");
     $alfred = new Person("alfred", True, "red", "long", "straight", "blue", "small", False, True, True, False, False, False, "imgs/alfred.jpg");
     $anita = new Person("anita", False, "blonde", "long", "straight", "blue", "small", False, False, False, False, True, False, "imgs/anita.jpg");
@@ -35,16 +34,18 @@
 
     $randomPeople = [];
     
-    //put people in random order and pop 16 into new array to use for the game
+    //put people in random order and pop 19 into new array to use for the game
     shuffle($people);
-    for($i=0;$i<16;$i++) {
+    for($i=0;$i<19;$i++) {
         $randomPeople[$i] = $people[count($people)-1];
         array_pop($people);
     }
 
     //randomly select one person to be the mystery person for the game and remove them from the array
-    $rand = rand(0, 15);
+    $rand = rand(0, 18);
     //print $rand;  debug
     $mysteryPerson = $randomPeople[$rand];
     array_splice($randomPeople, $rand, 1);
+
+//}
 ?>

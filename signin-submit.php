@@ -20,7 +20,6 @@ if(isset($_POST['username']) && !isset($_SESSION['username'])){
     if(isset($_SESSION['username'])){
         //redirects to main page
         header("Location:header.html");
-        console.log("error");
         exit();
     }
 

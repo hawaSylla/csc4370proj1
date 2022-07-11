@@ -28,7 +28,7 @@
   color: white;
 }
 
-img {
+.nav {
   height:30px;
   width:70px;
 }
@@ -37,4 +37,8 @@ img {
   float:right;
 }
 
+table {
+	height: 100%;
+	width: 100%;
+}
 
