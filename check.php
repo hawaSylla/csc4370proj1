@@ -26,6 +26,7 @@ if (isset($_SESSION['mysteryPerson'])) {
         $_SESSION['count']++;
         echo "Count : ";
         echo $_SESSION['count'];
+    }
     // } else if ($hLGuess == $_SESSION['mysteryPerson']->get_hairLength() ?? null) {
     //     echo "<center> an attribute is correct, see if you can get the final guess!</center>";
     //     $_SESSION['count']++;
@@ -41,15 +42,16 @@ if (isset($_SESSION['mysteryPerson'])) {
     //     $_SESSION['count']++;
     //     echo "Count : ";
     //     echo $_SESSION['count'];
-    // } else {
+    else {
         echo "<center>Wrong Guess.. Try again !</center>";
         $_SESSION['count']++;
         echo "<center>Count : </center>";
         echo $_SESSION['count'];
     }
-} else {
-    echo "Uh oh";
 }
+// else {
+//     echo "Uh oh";
+// }
 
 
 ?>
