@@ -16,6 +16,7 @@ if (isset($_SESSION['mysteryPerson'])) {
     if ($userGuess == $_SESSION['mysteryPerson']->get_name() ?? null) {
         echo "<center> you got it correct !</center>";
         echo $_SESSION['count'];
+        $_SESSION['finalS'] = $_SESSION['count'];
     } else if ($gGuess == $_SESSION['mysteryPerson']->get_isMale() ?? null) {
         echo "<center> an attribute is correct, see if you can get the final guess!</center>";
         $_SESSION['count']++;
