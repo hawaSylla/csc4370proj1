@@ -49,6 +49,7 @@ if (isset($_SESSION['mysteryPerson'])) {
         echo $_SESSION['count'];
     }
 }
+
 // else {
 //     echo "Uh oh";
 // }

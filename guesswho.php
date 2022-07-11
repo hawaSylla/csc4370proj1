@@ -45,7 +45,6 @@ $profile = $_SESSION['mysteryPerson']->get_pic() ?? null;
 
         <label for="Gender">Guess The Gender:</label>
         <select id="Gender" name="Gender">
-            <option value=null>null</option>
             <option value=true>Male</option>
             <option value=false>Female</option>
         </select>
@@ -55,6 +54,7 @@ $profile = $_SESSION['mysteryPerson']->get_pic() ?? null;
             <option value=null>null</option>
             <option value="Long">Long</option>
             <option value="Short">Short</option>
+            <option value="bald">bald</option>
 
         </select>
 
@@ -65,7 +65,7 @@ $profile = $_SESSION['mysteryPerson']->get_pic() ?? null;
             <option value="red">red</option>
             <option value="blonde">blonde</option>
             <option value="brown">brown</option>
-            <option value="bald">bald</option>
+            
             <option value="white">white</option>
 
         </select>
