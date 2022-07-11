@@ -21,48 +21,31 @@ if (isset($_SESSION['mysteryPerson'])) {
         $_SESSION['count']++;
         echo "Count : ";
         echo $_SESSION['count'];
-        // if (isset($_SERVER["HTTP_REFERER"])) {
-        //     header("Location: " . $_SERVER["HTTP_REFERER"]);
-        // }
     } else if ($hGuess == $_SESSION['mysteryPerson']->get_hairColor() ?? null) {
         echo "<center> an attribute is correct, see if you can get the final guess!</center>";
         $_SESSION['count']++;
         echo "Count : ";
         echo $_SESSION['count'];
-        if (isset($_SERVER["HTTP_REFERER"])) {
-            header("Location: " . $_SERVER["HTTP_REFERER"]);
-        }
-    } else if ($hLGuess == $_SESSION['mysteryPerson']->get_hairLength() ?? null) {
-        echo "<center> an attribute is correct, see if you can get the final guess!</center>";
-        $_SESSION['count']++;
-        echo "Count : ";
-        echo $_SESSION['count'];
-        // if (isset($_SERVER["HTTP_REFERER"])) {
-        //     header("Location: " . $_SERVER["HTTP_REFERER"]);
-        // }
-    } else if ($eGuess == $_SESSION['mysteryPerson']->get_eyeColor() ?? null) {
-        echo "<center> an attribute is correct, see if you can get the final guess!</center>";
-        $_SESSION['count']++;
-        echo "Count : ";
-        echo $_SESSION['count'];
-        // if (isset($_SERVER["HTTP_REFERER"])) {
-        //     header("Location: " . $_SERVER["HTTP_REFERER"]);
-        // } 
-    } else if ($nGuess == $_SESSION['mysteryPerson']->get_noseSize() ?? null) {
-        echo "<center> an attribute is correct, see if you can get the final guess!</center>";
-        $_SESSION['count']++;
-        echo "Count : ";
-        echo $_SESSION['count'];
-        // if (isset($_SERVER["HTTP_REFERER"])) {
-        //     header("Location: " . $_SERVER["HTTP_REFERER"]);
-        // } 
-    }
-    else{
+    // } else if ($hLGuess == $_SESSION['mysteryPerson']->get_hairLength() ?? null) {
+    //     echo "<center> an attribute is correct, see if you can get the final guess!</center>";
+    //     $_SESSION['count']++;
+    //     echo "Count : ";
+    //     echo $_SESSION['count'];
+    // } else if ($eGuess == $_SESSION['mysteryPerson']->get_eyeColor() ?? null) {
+    //     echo "<center> an attribute is correct, see if you can get the final guess!</center>";
+    //     $_SESSION['count']++;
+    //     echo "Count : ";
+    //     echo $_SESSION['count'];
+    // } else if ($nGuess == $_SESSION['mysteryPerson']->get_noseSize() ?? null) {
+    //     echo "<center> an attribute is correct, see if you can get the final guess!</center>";
+    //     $_SESSION['count']++;
+    //     echo "Count : ";
+    //     echo $_SESSION['count'];
+    // } else {
         echo "<center>Wrong Guess.. Try again !</center>";
         $_SESSION['count']++;
         echo "<center>Count : </center>";
         echo $_SESSION['count'];
-
     }
 } else {
     echo "Uh oh";
@@ -80,12 +63,12 @@ if (isset($_SESSION['mysteryPerson'])) {
 
         .button:hover {
             background-color: #4CAF50;
-            /* Green */
             color: white;
         }
     </style>
 </head>
-
-<button type="button",onclick="guesswho.php';";>Go Back</button>
+<form action="guesswho.php">
+    <button type="button">Go Back</button>
+</form>
 
 </html>
