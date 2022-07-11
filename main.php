@@ -1,3 +1,7 @@
+<?php 
+    session_start();
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,6 +15,15 @@
         <a href="leaderboard.php">Leaderboards</a>
         <a id="logout" href="starpage.php">Logout</a>
     </div>
+    <?php include 'gameInit.php'; 
+    $_SESSION['randomPeople'] = $randomPeople;
+    $_SESSION['mysteryPerson'] = $mysteryPerson;
+    //print $mysteryPerson->get_name() ?? null;   //debug: gets name of mystery person
+    //print $randomPeople[0]->get_pic() ?? null
+
+    //print_r($_SESSION);
+  
+    ?>
     <img src="imgs/guessWhoLogo.png" alt="guessWhoLogo" />
 
     <div class="start-page-buttons">
