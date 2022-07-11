@@ -2,6 +2,7 @@
 include("header.html");
 include("gameInit.php");
 session_start();
+$profile = $_SESSION['mysteryPerson']->get_pic() ?? null;
 ?>
 
 <table>
@@ -10,11 +11,31 @@ session_start();
         <th></th>
         <th></th>
         <th></th>
-        <th><img src="<?php print $_SESSION['mysteryPerson']->get_pic() ?? null; ?>" alt="mystery person"></th>
+        <th><div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="imgs/backofcard.png" alt="back">
+    </div>
+    <div class="flip-card-back">
+      <img src="<?php print $profile ?>" alt="mystery person">
+    </div>
+  </div>
+</div></th>
         <th></th>
         <th></th>
         <th></th>
         <th></th>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><img src="imgs/backsolid.png" alt="bg"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
     </tr>
     <tr>
         <td><img src="<?php print $_SESSION['randomPeople'][0]->get_pic() ?? null; ?>" alt="1"></td>
