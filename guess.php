@@ -26,7 +26,7 @@ $form->addOption('name', 'maria', 'maria', '', '');
 $form->addOption('name', 'max', 'max', '', '');
 $form->addOption('name', 'paul', 'paul', '', '');
 $form->addOption('name', 'peter', 'peter', '', '');
-$form->addOption('name', 'phillip', 'phillip', '', '');
+$form->addOption('name', 'philip', 'philip', '', '');
 $form->addOption('name', 'richard', 'richard', '', '');
 $form->addOption('name', 'robert', 'robert', '', '');
 $form->addOption('name', 'sam', 'sam', '', '');
