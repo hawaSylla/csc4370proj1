@@ -7,12 +7,12 @@ $profile = $_SESSION['mysteryPerson']->get_pic() ?? null;
 <div>
 <form method="post" action="check.php">
     <p>Guess The...</p>
-    <input type="radio" name=" Name" value="name"> Name<br>
+    <!-- <input type="radio" name=" Name" value="name"> Name<br>
     <input type="radio" name=" Gender" value="name"> Gender<br>
     <input type="radio" name=" Hair Length" value="name"> Hair Length<br>
     <input type="radio" name=" Hair Color" value="name"> Hair Color<br>
     <input type="radio" name=" Eye Color" value="name"> Eye Color<br>
-    <input type="radio" name=" Eye Size" value="name"> Eye Size <br>
+    <input type="radio" name=" Eye Size" value="name"> Eye Size <br> -->
 
     <label for="Name">Guess The Name:</label>
     <select id="Name" name="name">
@@ -47,15 +47,40 @@ $profile = $_SESSION['mysteryPerson']->get_pic() ?? null;
 
     <label for="Hair">Guess The Hair Color:</label>
     <select id="HairColor" name="HairC">
+        <option value="Long">Long</option>
+        <option value="Short">Short</option>
+        <option value=null>null</option>
+
+    </select>
+
+    <label for="Hair">Guess The Hair Length:</label>
+    <select id="HairLength" name="HairL">
         <option value="black">black</option>
         <option value="red">red</option>
         <option value="blonde">blonde</option>
         <option value="brown">brown</option>
         <option value="bald">bald</option>
         <option value="white">white</option>
-        <option value="null">null</option>
+        <option value=null>null</option>
 
-    </select>
+        </select>
+
+        <label for="Eye">Guess The Eye Color:</label>
+    <select id="EyeColor" name="EyeC">
+        <option value="blue">blue</option>
+        <option value="brown">brown</option>
+        <option value=null>null</option>
+
+        </select>
+
+        <label for="nose">Guess The nose Size:</label>
+    <select id="noseSize" name="nose">
+        <option value="Large">Large</option>
+        <option value="Small">Small</option>
+        <option value=null>null</option>
+
+        </select>
+
 
     <input type="submit">
 
