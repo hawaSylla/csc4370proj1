@@ -36,7 +36,7 @@
     
     //put people in random order and pop 18 into new array to use for the game
     shuffle($people);
-    for($i=0;$i<19;$i++) {
+    for($i=0;$i<18;$i++) {
         $randomPeople[$i] = $people[count($people)-1];
         array_pop($people);
     }
