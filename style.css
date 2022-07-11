@@ -79,6 +79,11 @@ span{
     color:#BF0426;
 }
 
+span.bold{
+    color:#2669BF;
+    font-weight: bold;
+}
+
 button{
     background-color: #2669BF;
     border: none;
@@ -107,6 +112,10 @@ img{
 button:hover, .button:hover{
     color:#2669BF;
     background-color: #F5F5F5;
+}
+
+h1{
+    text-align: center;
 }
 
 
